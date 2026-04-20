@@ -313,6 +313,12 @@ class CAR(Platforms):
     HYUNDAI_SANTA_FE.specs,
     flags=HyundaiFlags.CHECKSUM_CRC8 | HyundaiFlags.HYBRID,
   )
+  HYUNDAI_SANTA_FE_ICE_2024 = HyundaiPlatformConfig(
+    [HyundaiCarDocs("Hyundai Santa Fe ICE 2024-26", "All", video="https://youtu.be/VnHzSTygTS4",
+                    car_parts=CarParts.common([CarHarness.hyundai_p]))],
+    HYUNDAI_SANTA_FE.specs,
+    flags=HyundaiFlags.CHECKSUM_CRC8,
+  )
   HYUNDAI_SONATA = HyundaiPlatformConfig(
     [HyundaiCarDocs("Hyundai Sonata 2020-23", "All", video="https://www.youtube.com/watch?v=ix63r9kE3Fw",
                    car_parts=CarParts.common([CarHarness.hyundai_a]))],
